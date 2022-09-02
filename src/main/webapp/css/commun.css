@@ -1,0 +1,62 @@
+body {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.navbar-foot {
+	width: 100%;
+}
+
+.rouge {
+	color: red;
+}
+
+.vert {
+	color: green;
+}
+
+.bleu, .glyphicon-shopping-cart {
+	color: #337ab7;
+}
+.gros{
+	font-size: 1.0em;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.glyphicon-menu-up, .glyphicon-menu-down{
+	font-size: 0.7em;
+}
+.supp, .modif, .tri{
+	cursor:pointer;
+}
+#map{
+	width : 100%;
+	height : 400px;
+	border : 1px solid #337ab7;
+}
+
+.icon-flipped {
+transform: scaleX(-1);
+-moz-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+-ms-transform: scaleX(-1);
+}
+
+
+.bottle{
+	display: inline-block !important;
+}
+
+.errors {
+	background-color: #ff8888;
+	border: solid #800000 1px;
+	color: #800000;
+	padding-top: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.error_input {
+	border: solid #800000 1px;
+}
