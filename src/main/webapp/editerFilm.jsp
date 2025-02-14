@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <!DOCTYPE>
 <html>
@@ -34,7 +34,6 @@
 					<li><a href="lister">Liste des films</a></li>
 					<li><a href="ajouter">Ajouter un film</a></li>
 					<li><a href="listerStyle">Styles</a></li>
-					<li><a href="geo.jsp">Qui sommes-nous</a></li>
 				</ul>
 			</div>
 		</div>

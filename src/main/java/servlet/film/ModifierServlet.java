@@ -4,18 +4,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import bll.FilmBLL;
+import bll.FilmException;
 import bll.StyleBLL;
 import bo.Acteur;
 import bo.Film;
 import bo.Realisateur;
 import bo.Style;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class AfficherServlet
@@ -49,7 +49,7 @@ public class ModifierServlet extends HttpServlet {
 		String pTitre = request.getParameter("titre");
 		String pAnnee = request.getParameter("annee");
 		String pStyle = request.getParameter("style");
-		String pRealPrenom = request.getParameter("real.prennom");
+		String pRealPrenom = request.getParameter("real.prenom");
 		String pRealNom = request.getParameter("real.nom");
 		String pDuree = request.getParameter("duree");
 		String pVu = request.getParameter("vu");
@@ -89,7 +89,12 @@ public class ModifierServlet extends HttpServlet {
 		film.setSynopsis(pSynopsis);
 		
 		// 4. Je procede a l'insertion
-		filmBll.update(film);
+		try {
+			filmBll.update(film);
+		} catch (FilmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		// 5. Je redirige mon utilisateur
 		response.sendRedirect("lister");

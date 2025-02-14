@@ -30,7 +30,8 @@ private FilmDAO dao;
 		dao.delete(film);
 	}
 
-	public void update(Film filmAModifier) {
+	public void update(Film filmAModifier) throws FilmException {
+		verifierValeurs(filmAModifier);
 		dao.update(filmAModifier);
 	}
 

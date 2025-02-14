@@ -10,10 +10,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "styles")
-
 @NamedQueries({
-	@NamedQuery(name = "deleteStyle",
-				query = "DELETE FROM Style WHERE id = :id")
+	@NamedQuery(
+		name = "deleteStyle",
+		query = "DELETE FROM Style WHERE id = :id"
+	)
 })
 public class Style {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)

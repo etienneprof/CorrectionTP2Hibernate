@@ -1,7 +1,7 @@
 
-let titres = ['Star Wars', 'Retour vers le futur', 'Interstellar', 'Le Seigneur des Anneaux', 'Blade Runner', 'Le grand blond avec une chaussure noire'];
-let noms = ['CASSIN', 'BRUNETTE', 'OGOU', 'VETILLARD', 'KUN RATHA', 'GROUSSEAU', 'MANFOUMBI', 'BILLIE', 'HERVE', 'TRUFFIN', 'PRUDHOMME', 'CHAPLAIN'];
-let prenoms = ['Etienne', 'Benjamin', 'Brice', 'Jocelyne', 'Kean', 'Matthieu', 'Priscilia', 'Sandrine', 'Thomas', 'Clement', 'Vincent', 'Yann'];
+let titres = ['Star Wars', 'Retour vers le futur', 'Interstellar', 'Le Seigneur des Anneaux', 'Blade Runner', 'Le grand blond avec une chaussure noire', 'Premier contact'];
+let noms = ['CASSIN', 'CHARRIER', 'ABERBACHE', 'MUGNIERY', 'REDOUANE', 'DINOIR-LABRUX', 'DEMOLEON', 'LAVIALE', 'TEILLET', 'GAUTHIER'];
+let prenoms = ['Etienne', 'Régis', 'Valentin', 'Jean', 'Abdel', 'Thierry', 'Mickaël', 'Clara', 'Quentin', 'Maud'];
 let synopsis = ['Un super commentaire', 'Un film vraiment trop cool', 'Un commentaire parfaitement objectif', 'Un commentaire absolument pas objectif', 'Et bla bla bla'];
 
 function autopopulate() {

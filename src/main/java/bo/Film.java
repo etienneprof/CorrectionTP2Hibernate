@@ -9,19 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "films")
-
-@NamedQueries({
-	@NamedQuery(name = "deleteFilm",
-				query = "DELETE FROM Film WHERE id = :id")
-})
 public class Film {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
@@ -92,6 +85,11 @@ public class Film {
 	public int getDuree() {
 		return duree;
 	}
+	
+	/*
+	public String getDuree() {
+		return duree / 60 + ":" + duree % 60;
+	}*/
 
 	public void setDuree(int duree) {
 		this.duree = duree;
